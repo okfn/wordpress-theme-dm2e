@@ -1,0 +1,229 @@
+/* =============================================================================
+   Base
+   ========================================================================== */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+body {
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top, #ffffff 0%, #ececec 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ececec)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ffffff 0%,#ececec 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ffffff 0%,#ececec 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ffffff 0%,#ececec 100%); /* IE10+ */
+	background: linear-gradient(top, #ffffff 0%,#ececec 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ececec',GradientType=0 ); /* IE6-9 */
+}
+
+h1, h2, h3, h4, h5, h6, .brand {
+	font-family: 'Open Sans', sans-serif;
+}
+
+a {
+	color:#445874;
+}
+
+.well {
+	border:none;
+	background-color:#ececec;
+}
+
+/* =============================================================================
+   Header
+   ========================================================================== */
+
+#banner {
+	border-top-width: 5px;
+	border-top-style: solid;
+	border-top-color: #2e2e2e;
+	padding:0px 0px 10px 0px;
+}
+
+/* Fixed Topbar Navigation
+body { padding-top: 140px; } */
+body.admin-bar .navbar-fixed-top { top: 28px; }
+
+.btn-navbar {
+	background-color: #445874;
+	background-image:none;
+}
+
+.navbar-inner {
+  background-color:transparent;
+  background-image:none;
+	-moz-box-shadow:none;
+  -webkit-box-shadow:none;
+  box-shadow:none;
+	padding-top:20px;
+}
+
+.navbar .brand {
+	color:#727171;
+	font-weight:bold;
+	height:72px;
+	padding: 8px 45px 12px 20px;
+}
+
+.navbar .nav {
+	margin-top:30px;
+}
+
+.navbar .nav > li > a {
+    color: #333;
+    padding: 6px 10px 7px;
+    text-shadow:none;
+}
+
+.navbar .nav > li > a:hover {
+	color:#445874;
+}
+
+.navbar .nav .active > a,
+.navbar .nav .active > a:hover {
+  background-color: #445874;
+	-webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px; 
+}
+
+.navbar .nav .dropdown-toggle .caret,
+.navbar .nav .open.dropdown .caret {
+  border-top-color: #445874;
+}
+
+.dropdown.open .dropdown-toggle {
+  color: #445874;
+}
+
+header .header-widget {
+	float:right;
+	text-align:right;
+}
+
+/* =============================================================================
+   Content
+   ========================================================================== */
+
+h1 {
+  font-size: 24px;
+}
+h1 a {
+	color:#333333;
+}
+
+#content { }
+
+
+
+/* =============================================================================
+   Primary Content
+   ========================================================================== */
+
+#main { }
+
+
+
+/* =============================================================================
+   Sidebar
+   ========================================================================== */
+
+#sidebar input[type="text"]{
+	width:90%;
+}
+#sidebar .widget_search {
+	background-color:#ececec;
+	-webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px; 
+}
+#sidebar .widget_search form {
+	padding:15px;
+}
+#sidebar .widget_search .btn {
+	display:none;
+}
+
+
+
+/* =============================================================================
+   Posts
+   ========================================================================== */
+
+.hentry header { }
+.hentry h2 a { text-decoration: none; }
+.hentry time { display: block; }
+.hentry p.byline { }
+.hentry footer { clear: both; }
+
+
+
+/* =============================================================================
+   Post Comments
+   ========================================================================== */
+
+#comments, #respond, #submit { clear: both; display: block; }
+ol.commentlist img.avatar { float: left; margin-right: 10px; }
+
+
+
+/* =============================================================================
+   Footer
+   ========================================================================== */
+
+footer {
+	background: #222222; /* Old browsers */
+	background: -moz-linear-gradient(top,  #222222 0%, #1a1a1a 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#222222), color-stop(100%,#1a1a1a)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #222222 0%,#1a1a1a 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #222222 0%,#1a1a1a 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #222222 0%,#1a1a1a 100%); /* IE10+ */
+	background: linear-gradient(top,  #222222 0%,#1a1a1a 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222222', endColorstr='#1a1a1a',GradientType=0 ); /* IE6-9 */
+	color:#bfbfbf;
+	font-size:11px;
+}
+
+footer h3,
+footer a {
+	color:#bfbfbf;
+}
+
+footer h3 {
+	font-weight:normal;
+}
+
+#content-info {
+  margin-top: 45px;
+  padding: 35px 0 36px;
+  border-top: 1px solid #e5e5e5;
+}
+
+#content-info p small { font-size: 13px; }
+
+
+/* =============================================================================
+   WordPress Generated Classes
+   See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
+   ========================================================================== */
+
+.aligncenter { display: block; margin: 0 auto; }
+.alignleft { margin: 0 20px 20px 0; float: left; }
+.alignright { margin: 0 0 20px 20px; float: right; }
+
+
+
+/* =============================================================================
+   Media Queries
+   ========================================================================== */
+
+@media (max-width: 980px) {
+  /* Fix top padding when using the responsive grid with the fixed topbar */
+  body {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 980px) {
+	.header-widget {
+		display:none;
+	}
+}
