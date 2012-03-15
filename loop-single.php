@@ -9,17 +9,18 @@
       </header>
       <div class="row">
         <div class="span2">
-          <strong>Published:</strong>
+          <!--<strong>Published:</strong> -->
 					<!-- Display the date (November 16th, 2009 format) -->
-          <p><?php the_time('F jS, Y') ?></p>
+          <!--<p><?php the_time('F jS, Y') ?></p> -->
           
-          <strong>Author:</strong>
+          <!--<strong>Author:</strong> -->
           <!-- link to other posts by this posts author. -->
-          <p><?php the_author_posts_link() ?></p>
+          <!--<p><?php the_author_posts_link() ?></p> -->
           
-          <strong>Categories:</strong>
+          <!--<strong>Categories:</strong> -->
           <!-- Display a comma separated list of the Post's Categories. -->
-          <p class="postmetadata"><?php the_category(', '); ?></p>
+          <!--<p class="postmetadata"><?php the_category(', '); ?></p> -->
+          &nbsp;
         </div>
         <div class="span7 entry-content">
           <?php the_content(); ?>

@@ -5,8 +5,13 @@
       <div class="page-header">
       	<h1><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
       </div>
-      
-      <?php the_content(); ?>
+      <div class="row">
+        <div class="span2 left-column">
+          &nbsp;
+        </div>
+        <div class="span7">
+         <?php the_content(); ?>
+        </div>
       
       <?php wp_link_pages(array('before' => '<nav class="pagination">', 'after' => '</nav>')); ?>
     <?php roots_post_inside_after(); ?>
