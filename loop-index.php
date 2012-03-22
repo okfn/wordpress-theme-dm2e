@@ -2,9 +2,7 @@
 <?php while (have_posts()) : the_post(); ?>
   <?php roots_post_before(); ?>
     <?php roots_post_inside_before(); ?>
-      <div class="page-header">
-      	<h1><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
-      </div>
+      
       <div class="row">
         <div class="span2 left-column">
           <!--<strong>Published:</strong> -->
@@ -21,6 +19,9 @@
           &nbsp;
         </div>
         <div class="span7">
+          <div class="page-header">
+            <h1><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
+          </div>
           <?php the_content(); ?>
         </div>
       </div>

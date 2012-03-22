@@ -3,10 +3,7 @@
   <?php roots_post_before(); ?>
     <article <?php post_class() ?> id="post-<?php the_ID(); ?>">
     <?php roots_post_inside_before(); ?>
-      <header class="page-header">
-        <h1 class="entry-title"><?php the_title(); ?></h1>
-        <?php //roots_entry_meta(); ?>
-      </header>
+      
       <div class="row">
         <div class="span2">
           <!--<strong>Published:</strong> -->
@@ -20,9 +17,15 @@
           <!--<strong>Categories:</strong> -->
           <!-- Display a comma separated list of the Post's Categories. -->
           <!--<p class="postmetadata"><?php the_category(', '); ?></p> -->
+          <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Leftbar") ) : ?>
+					<?php endif; ?>
           &nbsp;
         </div>
         <div class="span7 entry-content">
+        <header class="page-header">
+          <h1 class="entry-title"><?php the_title(); ?></h1>
+            <?php //roots_entry_meta(); ?>
+          </header>
           <?php the_content(); ?>
         </div>
       </div>
