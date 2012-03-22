@@ -7,6 +7,7 @@
           <div class="span2 left-column">
             <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Leftbar") ) : ?>
 				    <?php endif; ?>
+            &nbsp;
           </div>
         	<div class="span7">
             <div class="page-header">
