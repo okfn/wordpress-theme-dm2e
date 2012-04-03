@@ -141,6 +141,22 @@ h1 a {
 	display:none;
 }
 
+.widget h3,
+.widget h4 {
+	font-size: 18px;
+  line-height: 27px;
+}
+
+.widget_recent_entries ul,
+.widget_rss ul {
+	margin:0px 0px 10px 0px;
+}
+.widget_recent_entries li,
+.widget_rss li {
+	display:block;
+	border-top: 1px dotted #CCCCCC;
+	padding:3px 0px;
+}
 
 
 /* =============================================================================

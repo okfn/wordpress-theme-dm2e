@@ -13,10 +13,10 @@
             <div class="page-header">
               <h1><?php _e('Latest Posts', 'roots');?></h1>
             </div>
-          </div>
-        </div>
-        <?php get_template_part('loop', 'index'); ?>
-      </div><!-- /#main -->
+           <?php get_template_part('loop', 'index'); ?>
+         </div>
+       </div>
+    </div><!-- /#main -->
     <?php roots_main_after(); ?>
     <?php roots_sidebar_before(); ?>
       <aside id="sidebar" class="<?php echo SIDEBAR_CLASSES; ?>" role="complementary">
