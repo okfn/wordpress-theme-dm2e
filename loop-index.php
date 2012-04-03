@@ -16,7 +16,6 @@
           <!--<strong>Categories:</strong> -->
           <!-- Display a comma separated list of the Post's Categories. -->
           <!--<p class="postmetadata"><?php the_category(', '); ?></p> -->
-          &nbsp;
         </div>
         <div class="span7">
           <div class="page-header">

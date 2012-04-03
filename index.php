@@ -10,9 +10,9 @@
             &nbsp;
           </div>
         	<div class="span7">
-            <div class="page-header">
+            <!--<div class="page-header">
               <h1><?php _e('Latest Posts', 'roots');?></h1>
-            </div>
+            </div> -->
            <?php get_template_part('loop', 'index'); ?>
          </div>
        </div>
