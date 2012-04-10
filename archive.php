@@ -1,42 +1,26 @@
 <?php get_header(); ?>
-  <?php roots_content_before(); ?>
-    <div id="content" class="<?php echo CONTAINER_CLASSES; ?>">
-    <?php roots_main_before(); ?>
-      <div id="main" class="<?php echo MAIN_CLASSES; ?>" role="main">
-        <div class="page-header">
-          <h1>
-            <?php
-              $term = get_term_by('slug', get_query_var('term'), get_query_var('taxonomy'));
-              if ($term) {
-                echo $term->name;
-              } elseif (is_day()) {
-                printf(__('Daily Archives: %s', 'roots'), get_the_date());
-              } elseif (is_month()) {
-                printf(__('Monthly Archives: %s', 'roots'), get_the_date('F Y'));
-              } elseif (is_year()) {
-                printf(__('Yearly Archives: %s', 'roots'), get_the_date('Y'));
-              } elseif (is_author()) {
-                global $post;
-                $author_id = $post->post_author;
-                printf(__('Author Archives: %s', 'roots'), get_the_author_meta('user_nicename', $author_id));
-              } else {
-                single_cat_title();
-              }
-            ?>
-          </h1>
-        </div>
-        <?php roots_loop_before(); ?>
-        <?php get_template_part('loop', 'category'); ?>
-        <?php roots_loop_after(); ?>
-      </div><!-- /#main -->
-    <?php roots_main_after(); ?>
-    <?php roots_sidebar_before(); ?>
-      <aside id="sidebar" class="<?php echo SIDEBAR_CLASSES; ?>" role="complementary">
-      <?php roots_sidebar_inside_before(); ?>
-        <?php get_sidebar(); ?>
-      <?php roots_sidebar_inside_after(); ?>
-      </aside><!-- /#sidebar -->
-    <?php roots_sidebar_after(); ?>
-    </div><!-- /#content -->
-  <?php roots_content_after(); ?>
+
+		<!-- Row for main content area -->
+		<div id="content" class="eight columns" role="main">
+	
+			<div class="post-box">
+				<h1>
+					<?php if (is_day()) : ?>
+						<?php printf(__('Daily Archives: %s', 'reverie'), get_the_date()); ?>
+					<?php elseif (is_month()) : ?>
+						<?php printf(__('Monthly Archives: %s', 'reverie'), get_the_date('F Y')); ?>
+					<?php elseif (is_year()) : ?>
+						<?php printf(__('Yearly Archives: %s', 'reverie'), get_the_date('Y')); ?>
+					<?php else : ?>
+						<?php single_cat_title(); ?>
+					<?php endif; ?>
+				</h1>
+				<hr>
+				<?php get_template_part('loop', 'category'); ?>
+			</div>
+
+		</div><!-- End Content row -->
+		
+		<?php get_sidebar(); ?>
+		
 <?php get_footer(); ?>

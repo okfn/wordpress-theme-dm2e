@@ -1,11 +1,11 @@
 <?php
 /*
-Template Name: Full Width
+Template Name: Custom Template
 */
 get_header(); ?>
 
 		<!-- Row for main content area -->
-		<div id="content" class="twelve columns" role="main">
+		<div id="content" class="eight columns" role="main">
 	
 			<div class="post-box">
 				<?php get_template_part('loop', 'page'); ?>

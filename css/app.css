@@ -1,10 +1,28 @@
-/* =============================================================================
-   Base
-   ========================================================================== */
+/*  ----------------------
+    Your Customised Styles
+    ---------------------- */
+
+/* -------------------------------------------------- 
+   Table of Contents
+-----------------------------------------------------
+:: Shared Styles
+:: Layout
+:: Content
+:: Media Queries
+*/
+
+
+/* -----------------------------------------
+   Shared Styles
+----------------------------------------- */
+
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
 
 body {
-	background: #ffffff; /* Old browsers */
+	background-color:#1C1C1C;	
+}
+
+#container {background: #ffffff; /* Old browsers */
 	background: -moz-linear-gradient(top, #ffffff 0%, #ececec 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ececec)); /* Chrome,Safari4+ */
 	background: -webkit-linear-gradient(top, #ffffff 0%,#ececec 100%); /* Chrome10+,Safari5.1+ */
@@ -12,177 +30,80 @@ body {
 	background: -ms-linear-gradient(top, #ffffff 0%,#ececec 100%); /* IE10+ */
 	background: linear-gradient(top, #ffffff 0%,#ececec 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ececec',GradientType=0 ); /* IE6-9 */
+	margin-top:3px;
 }
 
 h1, h2, h3, h4, h5, h6, .brand {
 	font-family: 'Open Sans', sans-serif;
 }
 
-a {
-	color:#445874;
-}
+a {color: #445874;}
 
-.well {
-	border:none;
-	background-color:#ececec;
-}
-
-/* =============================================================================
-   Header
-   ========================================================================== */
-
-#banner {
-	border-top-width: 5px;
-	border-top-style: solid;
-	border-top-color: #2e2e2e;
-	padding:0px 0px 10px 0px;
-}
-
-/* Fixed Topbar Navigation
-body { padding-top: 140px; } */
-body.admin-bar .navbar-fixed-top { top: 28px; }
-
-.btn-navbar {
-	background-color: #445874;
-	background-image:none;
-}
-
-.navbar-inner {
-  background-color:transparent;
-  background-image:none;
-	-moz-box-shadow:none;
-  -webkit-box-shadow:none;
-  box-shadow:none;
-	padding-top:20px;
-}
-
-.navbar .brand {
-	color:#727171;
-	font-weight:bold;
-	height:72px;
-	padding: 8px 45px 12px 20px;
-}
-
-.navbar .nav {
-	margin-top:30px;
-}
-
-.navbar .nav > li > a {
-    color: #333;
-    padding: 6px 10px 7px;
-    text-shadow:none;
-}
-
-.navbar .nav > li > a:hover {
-	color:#445874;
-}
-
-.navbar .nav .active > a,
-.navbar .nav .active > a:hover {
-  background-color: #445874;
-	-webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px; 
-}
-
-.navbar .nav .dropdown-toggle .caret,
-.navbar .nav .open.dropdown .caret {
-  border-top-color: #445874;
-}
-
-.dropdown.open .dropdown-toggle {
-  color: #445874;
-}
-
-header .header-widget {
-	float:right;
-	text-align:right;
-}
-
-/* =============================================================================
-   Content
-   ========================================================================== */
-
-h1 {
-  font-size: 24px;
-}
-h1 a {
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
 	color:#333333;
 }
 
-#content { }
 
+/* -----------------------------------------
+   Layout
+----------------------------------------- */
 
-
-/* =============================================================================
-   Primary Content
-   ========================================================================== */
-
-#main { }
-
-
-/* =============================================================================
-   Sidebar
-   ========================================================================== */
-
-#sidebar input[type="text"]{
-	width:90%;
+.logo {
+	font-size:36px;
+	font-weight:bold;
 }
-#sidebar .widget_search {
-	background-color:#ececec;
-	-webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px; 
+.subheader {
+	font-size:11px;
+	margin-top:-11px;
 }
-#sidebar .widget_search form {
-	padding:15px;
+
+dl.nav dd a {
+	color:#FFF;
 }
-#sidebar .widget_search .btn {
+dl.nav dd a:hover {
+	background-color:#3789c4;
+}
+
+dl.nav dd.current-menu-item a,
+dl.nav dd.current-post-ancestor a,
+dl.nav dd.current-menu-parent a,
+dl.nav dd.current-post-parent a {
+	background: #FFF;
+	color: #445874;
+	-webkit-box-shadow: inset 0px 0px 1px 0px #000000;
+	-moz-box-shadow: inset 0px 0px 1px 0px #000000;
+	box-shadow: inset 0px 0px 1px 0px #000000;
+}
+
+div.reverie-header {
+	margin: 0;
+	border-bottom: none;
+}
+
+nav {
+	background: #217cbe; /* Old browsers */
+  background: -moz-linear-gradient(top,  #217cbe 0%, #217cbe 49%, #0e71b8 50%, #0e71b8 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#217cbe), color-stop(49%,#217cbe), color-stop(50%,#0e71b8), color-stop(100%,#0e71b8)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #217cbe 0%,#217cbe 49%,#0e71b8 50%,#0e71b8 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #217cbe 0%,#217cbe 49%,#0e71b8 50%,#0e71b8 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #217cbe 0%,#217cbe 49%,#0e71b8 50%,#0e71b8 100%); /* IE10+ */
+	background: linear-gradient(top,  #217cbe 0%,#217cbe 49%,#0e71b8 50%,#0e71b8 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#217cbe', endColorstr='#0e71b8',GradientType=0 ); /* IE6-9 */
+	-webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+dl.nav {
+	padding:11px 3px 11px 3px;
+}
+
+dl.nav .sub-menu {
 	display:none;
 }
-
-.widget h3,
-.widget h4 {
-	font-size: 18px;
-  line-height: 27px;
-}
-
-.widget_recent_entries ul,
-.widget_rss ul {
-	margin:0px 0px 10px 0px;
-}
-.widget_recent_entries li,
-.widget_rss li {
-	display:block;
-	border-top: 1px dotted #CCCCCC;
-	padding:3px 0px;
-}
-
-
-/* =============================================================================
-   Posts
-   ========================================================================== */
-
-.hentry header { }
-.hentry h2 a { text-decoration: none; }
-.hentry time { display: block; }
-.hentry p.byline { }
-.hentry footer { clear: both; }
-
-
-
-/* =============================================================================
-   Post Comments
-   ========================================================================== */
-
-#comments, #respond, #submit { clear: both; display: block; }
-ol.commentlist img.avatar { float: left; margin-right: 10px; }
-
-
-
-/* =============================================================================
-   Footer
-   ========================================================================== */
 
 footer {
 	background: #222222; /* Old browsers */
@@ -197,48 +118,32 @@ footer {
 	font-size:11px;
 }
 
-footer h3,
-footer a {
-	color:#bfbfbf;
+
+/* -----------------------------------------
+   Content
+----------------------------------------- */
+
+header h2 {
+	margin: 18px 0;
+	padding-bottom: 17px;
 }
 
-footer h3 {
-	font-weight:normal;
+.widget_recent_entries li,
+.widget_rss li {
+	border-top: 1px dotted #CCCCCC;
+	display: block;
+	padding: 3px 0;
+	margin:5px 0px;
 }
 
-#content-info {
-  margin-top: 45px;
-  padding: 35px 0 36px;
-  border-top: 1px solid #e5e5e5;
-}
 
-#content-info p small { font-size: 13px; }
-
-
-/* =============================================================================
-   WordPress Generated Classes
-   See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
-   ========================================================================== */
-
-.aligncenter { display: block; margin: 0 auto; }
-.alignleft { margin: 0 20px 20px 0; float: left; }
-.alignright { margin: 0 0 20px 20px; float: right; }
-
-
-
-/* =============================================================================
+/* -----------------------------------------
    Media Queries
-   ========================================================================== */
+----------------------------------------- */
 
-@media (max-width: 980px) {
-  /* Fix top padding when using the responsive grid with the fixed topbar */
-  body {
-    padding-top: 0;
-  }
+@media only screen and (max-width: 767px) {
+	dl.nav dt,
+  dl.nav dd {
+		display:block;
 }
-
-@media (max-width: 980px) {
-	.header-widget {
-		display:none;
-	}
 }
