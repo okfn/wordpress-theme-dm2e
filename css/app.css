@@ -37,7 +37,10 @@ h1, h2, h3, h4, h5, h6, .brand {
 	font-family: 'Open Sans', sans-serif;
 }
 
-a {color: #445874;}
+a {
+	color: #445874;
+	font-weight:bold;
+}
 
 h2 a,
 h3 a,
