@@ -54,6 +54,21 @@
 	
 	<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 	<?php wp_head(); ?>
+    
+  <script>
+	  // add class for dropdown parent
+		$(function(){
+	
+			$("dl.nav dd").hover(function(){
+					$(this).addClass("hover");
+			
+			}, function(){
+					$(this).removeClass("hover");
+			});
+	
+	});
+  </script>
+  
 </head>
 
 <body <?php body_class(); ?>>
@@ -88,7 +103,7 @@
 						'link_before' => '',
 						'link_after' => '',
 						'depth' => 0,
-						'items_wrap' => '<dl class="nav _hide-on-phones"><dt></dt>%3$s</dl>',
+						'items_wrap' => '<dl class="nav">%3$s</dl>',
 						'walker' => new description_walker())
 					); ?>
 				</nav>
