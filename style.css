@@ -119,3 +119,8 @@ dl.nav dt,
 dl.nav dd {
 	float:none;
 }
+
+#content ul {
+	list-style:square;
+	margin-left:15px;
+}
