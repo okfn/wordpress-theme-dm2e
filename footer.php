@@ -4,11 +4,18 @@
     <div class="row">
       <?php dynamic_sidebar("Footer"); ?>
     </div>
+    <!--
     <div class="row">
       <div class="four columns">
         &copy; 2012<?php //echo date('Y'); ?> <?php bloginfo('name'); ?>
       </div>
       <?php //wp_nav_menu(array('theme_location' => 'utility_navigation', 'container' => false, 'menu_class' => 'eight columns footer-nav')); ?>
+    </div>
+    -->
+    <div class="row">
+      <div class="twelve columns">
+        <?php do_action('okf_footer'); ?>
+      </div>
     </div>
   </footer>
 	
