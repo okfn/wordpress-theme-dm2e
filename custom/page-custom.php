@@ -2,16 +2,18 @@
 /*
 Template Name: Custom Template
 */
-get_header(); ?>
+get_header(); 
+include(get_query_template('left-column'));
+?>
 
-		<!-- Row for main content area -->
+		<!-- Column for main content area -->
 		<div id="content" class="eight columns" role="main">
 	
 			<div class="post-box">
 				<?php get_template_part('loop', 'page'); ?>
 			</div>
 
-		</div><!-- End Content row -->
+		</div><!-- End Content Column -->
 		
 		<?php get_sidebar(); ?>
 		

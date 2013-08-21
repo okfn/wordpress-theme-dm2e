@@ -112,8 +112,4 @@
 		
 		<!-- Row for main content area -->
 		<div id="main" class="row">
-      <aside class="three columns" role="complementary">
-        <div class="sidebar-box">
-          <?php dynamic_sidebar("Leftbar"); ?>
-        </div>
-      </aside>
+      

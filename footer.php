@@ -20,8 +20,17 @@
   </footer>
 	
 	<!-- Included JS Files of Foundation -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/foundation.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/app.js"></script>
+   <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.dotdotdot.min.js" type="text/javascript"></script>
+    <script>
+			$(document).ready(function() {
+				$(".home-posts .post .text").dotdotdot({
+				// configuration goes here
+				});
+			});
+		</script>
 	
 	<!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
 	     chromium.org/developers/how-tos/chrome-frame-getting-started -->
