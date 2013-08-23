@@ -1,6 +1,6 @@
 <?php 
 get_header();  
-include(get_query_template('left-column'));
+//include(get_query_template('left-column'));
 ?>
 
 		<!-- Column for main content area -->

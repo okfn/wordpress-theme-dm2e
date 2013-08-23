@@ -1,10 +1,10 @@
 <?php 
 get_header();  
-include(get_query_template('left-column'));
+//include(get_query_template('left-column'));
 ?>
 
 		<!-- Column for main content area -->
-		<div id="content" class="eight columns" role="main">
+		<div id="content" class="nine columns" role="main">
 	
 			<div class="post-box">
 				<h1>
