@@ -177,7 +177,7 @@ dl.nav dd a {
 dl.nav .sub-menu {
 	display:none;
 	position: absolute;
-	top:20px;
+	top:21px;
 	left:0px;
 	z-index: 2;
 	background-color:#0E71B8;
@@ -190,12 +190,30 @@ dl.nav .sub-menu {
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
 }
-dl.nav dd.hover .sub-menu {
+dl.nav dd:hover > .sub-menu,
+dl.nav dd.hover > .sub-menu {
+	display:block;
+}
+dl.nav .sub-menu dd {
 	display:block;
 }
 dl.nav .sub-menu dd a {
 	display:block;
 	margin-right:6px;
+}
+dl.nav dd .sub-menu .sub-menu {
+	left:147px;
+	top:-5px;
+	padding-top:5px;
+	-webkit-border-radius: 3px;
+	-webkit-border-top-left-radius: 0;
+	-webkit-border-bottom-left-radius: 0;
+	-moz-border-radius: 3px;
+	-moz-border-radius-topleft: 0;
+	-moz-border-radius-bottomleft: 0;
+	border-radius: 3px;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
 }
 
 dl.nav dd.current-menu-item .sub-menu dd a,
