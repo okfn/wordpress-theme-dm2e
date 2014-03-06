@@ -1,4 +1,17 @@
 <?php
+
+/*********************************************************************************************
+* Shortcodes
+*/
+
+// Hide Title
+function notitle_shortcode( $atts ){
+ return '<style type="text/css"> .pagetitle { display: none; } </style>';
+}
+add_shortcode( 'notitle', 'notitle_shortcode' );
+
+/**********************************************************************************************/
+
 function reverie_setup() {
 	// Add language supports. Please note that Reverie Framework does not include language files.
 	load_theme_textdomain('reverie', get_template_directory() . '/lang');
